@@ -363,3 +363,26 @@ body {
     gap: 10px;
   }
 }
+/* ===== 커스텀: 카드 hover 효과 ===== */
+.ticket {
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.ticket:hover {
+  transform: translateY(-6px) rotate(-0.6deg);
+  box-shadow: 0 18px 40px rgba(26, 26, 24, 0.18);
+}
+
+.ticket__poster img {
+  transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+.ticket:hover .ticket__poster img {
+  transform: scale(1.06);
+  filter: saturate(1.15) contrast(1.05);
+}
+
+.ticket:hover .ticket__title {
+  color: var(--accent);
+  transition: color 0.3s ease;
+}
